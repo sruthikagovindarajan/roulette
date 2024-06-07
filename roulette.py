@@ -91,8 +91,8 @@ def returnRandomNumber():
 def computeReturn(bet):
     return (bet*2)
 
-def Pair(bet, total):
-    a = returnRandomNumber()
+def Pair(bet, c,total):
+    a = c
     if a%2 == 0:
         print("YOU'VE WON THE BET!\n")
         print("RETURN = $" + str(computeReturn(bet)))
@@ -105,8 +105,8 @@ def Pair(bet, total):
         print("Your total=",total)
     return total
 
-def Impair(bet, total):
-    a = returnRandomNumber()
+def Impair(bet, c,total):
+    a = c
     if a%2!=0:
         print("YOU'VE WON THE BET!\n")
         print("RETURN = $" + str(computeReturn(bet)))
